@@ -1,4 +1,4 @@
-package com.luv2code.ecommerce.entity;
+package com.luv2code.ecommerce.dao;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.util.Date;
 @Entity
 @Table(name="product")
 @Data
-public class Product {
+public class  Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

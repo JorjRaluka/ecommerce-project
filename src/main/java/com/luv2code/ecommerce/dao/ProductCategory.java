@@ -1,5 +1,6 @@
-package com.luv2code.ecommerce.entity;
+package com.luv2code.ecommerce.dao;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,6 +22,7 @@ public class ProductCategory {
     private String categoryName;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    @JsonIgnore
     private Set<Product> products;
 }
 
