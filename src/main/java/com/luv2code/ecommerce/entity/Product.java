@@ -19,7 +19,7 @@ public class Product {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name="categoryId",nullable = false)
+    @JoinColumn(name="category_id",nullable = false)
     private ProductCategory category;
 
     @Column(name="sku")
@@ -31,24 +31,24 @@ public class Product {
     @Column(name="description")
     private String description;
 
-    @Column(name="unitPrice")
+    @Column(name="unit_price")
     private BigDecimal unitPrice;
 
-    @Column(name="imageUrl")
+    @Column(name="image_url")
     private String imageUrl;
 
     @Column(name="active")
     private boolean active;
 
-    @Column(name="unitsInStock")
+    @Column(name="units_in_stock")
     private int unitsInStock;
 
     @CreationTimestamp
-    @Column(name="dateCreated")
+    @Column(name="date_created")
     private Date dateCreated;
 
     @UpdateTimestamp
-    @Column(name="lastUpdated")
+    @Column(name="last_updated")
     private Date lastUpdated;
 
 }

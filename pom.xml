@@ -49,6 +49,15 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.stripe/stripe-java -->
+		<dependency>
+			<groupId>com.stripe</groupId>
+			<artifactId>stripe-java</artifactId>
+			<version>28.4.0</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -59,6 +68,12 @@
 			<artifactId>maven-install-plugin</artifactId>
 			<version>2.4</version>
 			<type>maven-plugin</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.okta.spring</groupId>
+			<artifactId>okta-spring-boot-starter</artifactId>
+			<version>3.0.7</version>
 		</dependency>
 
 		<dependency>
