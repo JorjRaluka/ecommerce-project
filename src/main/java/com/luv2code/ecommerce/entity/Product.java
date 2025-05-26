@@ -3,6 +3,8 @@ package com.luv2code.ecommerce.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
@@ -11,6 +13,7 @@ import java.util.Date;
 @Entity
 @Table(name="product")
 @Data
+
 public class Product {
 
     @Id
@@ -50,5 +53,6 @@ public class Product {
     @UpdateTimestamp
     @Column(name="last_updated")
     private Date lastUpdated;
+
 
 }

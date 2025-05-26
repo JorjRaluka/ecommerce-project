@@ -28,6 +28,12 @@ public class Customer {
     @Column(name="email")
     private String email;
 
+    @Column(nullable = false)
+    private String password;
+
+    @Column(nullable = false)
+    private String role = "USER";
+
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
     private Set<Order> orders=new HashSet<>();
 
